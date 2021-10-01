@@ -9,7 +9,7 @@ class calculexp{
             return x*puissance(p-1, x);
         }
     }
-    static double fact(double num){
+    static double fact(double num){ // ON utilise des Double car pour des valeurs supérieurs à 12 l'entier int ne sera pas correct 
         if(num == 0){
             return 1;
         }
@@ -18,6 +18,7 @@ class calculexp{
         }
 
     }
+    
     static double exponentielle (double x){
         double e = 0;
         for(int i = 0; i<20 ; i++){
@@ -43,9 +44,9 @@ class vrai_exp {
 
         Scanner entree  =  new Scanner(System.in);
         System.out.print("X = ");
-        Double x = entree.nextDouble();
+        int x = entree.nextInt();
     
         System.out.println( "Exp(" + x + ") = " + Math.exp(x));
     
-        }
+    }
 }
