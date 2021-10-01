@@ -38,15 +38,15 @@ class trinome{
         if(detla >= 0){
             double racines[]  = calculRacines();
             if( racines[0] == racines[1]){
-                System.out.println("La fonction ne possede qu'une solution  : \n" + "X = " + racines[0]);
+                System.out.println("La fonction ne possede qu'une solution  : \n\n" + "X = " + racines[0] + "\n");
             }
             else {
-                System.out.println("La fonction possède deux solutions : \n" +"X1 = "  + racines[0] + "\n" + "X2= = "  + racines[1]);
+                System.out.println("La fonction possède deux solutions : \n\n" +"X1 = "  + racines[0] + "\t | \t" + "X2 = "  + racines[1] + "\n");
             }
         }
         else{
             String racines[] = calculRacinesIma();
-            System.out.println("La fonction possède des solution imaginaires  : " + "\n" + "X1 = "  + racines[0] + "\n" + "X2= = "  + racines[1]);
+            System.out.println("La fonction possède des solution imaginaires  : " + "\n\n" + "X1 = "  + racines[0] + "\t | \t" + "X2 = "  + racines[1] + "\n");
         }
     }
 }
